@@ -1,1 +1,1 @@
-"# SwiftMetrics-bluemix" 
+# SwiftMetrics-bluemix
