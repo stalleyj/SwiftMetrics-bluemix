@@ -197,7 +197,7 @@ public class AutoScalar {
   private func setMonitors(monitor: SwiftMonitor) {
     monitor.on({(mem: MemData) -> () in
       self.metrics.memoryStats.count += 1
-      self.metrics.memoryStats.sum += Float(mem.applicationRAMUsed)
+      self.metrics.memoryStats.sum += Float(mem.applicationPrivateSize)
     })
     monitor.on({(cpu: CPUData) -> () in
       self.metrics.cpuStats.count += 1
